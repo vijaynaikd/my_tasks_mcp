@@ -1,0 +1,13 @@
+[project]
+name = "mcp-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "google-auth>=2.40.2",
+    "google-auth-oauthlib>=1.2.2",
+    "gspread>=6.2.1",
+    "mcp>=1.9.2",
+    "oauth2client>=4.1.3",
+]
