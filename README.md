@@ -41,7 +41,7 @@ uv add google-auth google-auth-oauthlib gspread mcp oauth2client
             "command": "uv",
             "args": [
                 "--directory",
-                "/Users/vijaynaik/Documents/MCP Projects/mcp_server/",
+                "/path to your project/mcp_server/",
                 "run",
                 "main.py"
             ]
