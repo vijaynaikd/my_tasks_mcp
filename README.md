@@ -33,3 +33,19 @@ Download add googleserviceaccount.json to root folder
 uv add google-auth google-auth-oauthlib gspread mcp oauth2client
 ```
 
+8. Add the MCP configuration to Claude Desktop
+```
+{
+    "mcpServers": {
+        "my_tasks": {
+            "command": "uv",
+            "args": [
+                "--directory",
+                "/Users/vijaynaik/Documents/MCP Projects/mcp_server/",
+                "run",
+                "main.py"
+            ]
+        }
+    }
+}
+```
