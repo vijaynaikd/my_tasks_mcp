@@ -3,29 +3,6 @@ from mcp.server.fastmcp import FastMCP
 from datetime import datetime
 from google_sheets_client import sheet
 
-tasks = [
-    {
-        "task": "Search papers",
-        "due_date": "2025-06-10",
-        "status": "pending"
-    },
-    {
-        "task": "Extract paper information",
-        "due_date": "2025-06-12",
-        "status": "pending"
-    },
-    {
-        "task": "List available topics",
-        "due_date": "2025-06-08",
-        "status": "completed"
-    },
-    {
-        "task": "Get papers by topic",
-        "due_date": "2025-06-15",
-        "status": "pending"
-    }
-]
-
 # Initialize FastMCP server
 mcp = FastMCP("research")
 
