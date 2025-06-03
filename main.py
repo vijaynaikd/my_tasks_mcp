@@ -74,6 +74,23 @@ def create_task_prompt(task: str, due_date: str) -> str:
         4. Show a summary of the number of tasks grouped by status (e.g., pending, completed).
         """    
 
+@mcp.prompt()
+def visualize_tasks() -> str:
+    """
+    A prompt to:
+    1. Retrieve all tasks.
+    2. Display the tasks as a table.
+    3. Show a pie chart of tasks grouped by status.
+    """
+    return """
+        1. Retrieve the list of all tasks using:  
+        get_tasks()
+
+        2. Display the list of tasks as a table with columns:  
+        **Task**, **Due Date**, **Status**
+
+        3. Group the tasks by **Status** and draw a pie chart showing the count of tasks in each status.
+    """
 
 if __name__ == "__main__":
     # Initialize and run the server
